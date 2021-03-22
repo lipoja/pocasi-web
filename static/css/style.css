@@ -1,0 +1,29 @@
+/* 
+    Document   : style
+    Created on : Jan 4, 2014, 5:14:48 PM
+    Author     : Jan Lipovsky
+*/
+
+html, body {
+    height: 100% !important;
+color: white;
+background-color: #333;
+}
+
+body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.temp {
+font-size: 20vw;
+}
+.temp2 {
+font-size: 13vw;
+}
+.time2 {
+font-size: 2vw;
+}
+.time {
+font-size: 5vw;
+}
