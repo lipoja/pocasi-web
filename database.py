@@ -1,11 +1,12 @@
 import datetime
 import json
+import os
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-with open('pocasi_db.json') as dbconf:
+with open(os.path.join(os.path.dirname(__file__), 'pocasi_db.json')) as dbconf:
     db = json.loads(dbconf.read())
 
 DB_URL = 'postgresql+psycopg2://{user}:{pw}@{url}/{db}'.format(
